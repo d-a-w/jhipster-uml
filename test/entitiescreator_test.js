@@ -51,23 +51,6 @@ describe('EntitiesCreator', () => {
           }
         });
       });
-      describe('because the user has relationships with a NoSQL database type', () => {
-        const parserData = ParserFactory.createParser({
-          file: './test/xmi/modelio.xmi',
-          databaseType: 'sql'
-        });
-        const parser = parserData.parser;
-        const parsedData = parser.parse(parserData.data);
-
-        it('fails', () => {
-          try {
-            createEntities(parsedData, new MongoDBTypes(), {});
-            fail();
-          } catch (error) {
-            expect(error.name).to.eq('NoSQLModelingException');
-          }
-        });
-      });
     });
     describe('when passing valid args', () => {
       const parserData = ParserFactory.createParser({
