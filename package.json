@@ -33,7 +33,7 @@
     "chalk": "2.3.0",
     "deasync": "0.1.10",
     "inquirer": "3.3.0",
-    "jhipster-core": "1.4.0",
+    "jhipster-core": "d-a-w/jhipster-core#mongodb-relationships",
     "lodash": "4.17.4",
     "winston": "2.4.0",
     "xml2js": "0.4.19",
